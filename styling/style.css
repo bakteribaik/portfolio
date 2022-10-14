@@ -50,14 +50,23 @@ i:hover{
     font-size: 25pt;
     padding-left: 20px;
     height: 60px;
+    background-color: #1b2631ce;
 }
 .web-icon i {
     margin-top: 20px;
 }
 .web-title{
-    margin-right: 30px;
-    font-size: 14pt;
-    color: rgba(127, 255, 212, 0.986);
+    margin-bottom: 30px;
+}
+.web-title a{
+    color: white;
+    font-size: 13pt;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.web-title a:hover{
+    color: aquamarine;
 }
 /* end of navbar */
 
@@ -66,9 +75,24 @@ i:hover{
     margin-top: 50px;
     margin-left: 100px;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 165px }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
 .greeting-text{
+    width: 165px;
+    overflow: hidden;
+    border-right: .15em solid orange;
     font-family: 'Consolas';
     color: aquamarine;
+    white-space: nowrap;
+    animation: 
+        typing 2.5s steps(40, end), 
+        blink-caret .75s step-end infinite;
 }
 .greeting-title{
     font-family: 'Poppins-Bold';
@@ -79,7 +103,7 @@ i:hover{
 .greeting-description{
     color: rgba(255, 255, 255, 0.473);
 }
-.greeting-description a {
+.mydesk {
     color: aquamarine;
     text-decoration: none;
 }
@@ -111,6 +135,15 @@ i:hover{
 .mydesk-button:hover{
     background-color: aquamarine;
     color: #1B2631;
+    cursor: pointer;
+}
+.troll{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.336);
+}
+.troll a{
+    color: aquamarine;
+    text-decoration: none;
 }
 /* end of content */
 

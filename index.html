@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styling/style.css">
-    <title>Welcome | Zul's Porto</title>
-
-    <script src="https://kit.fontawesome.com/5b7e08bb94.js" crossorigin="anonymous"></script>
+    <title>Home | Zul's Portfolio</title>
 </head>
 <body>
     <div class="sidebar">
@@ -26,21 +24,60 @@
             <i class="fa fa-wave-square"></i>
         </div>
         <div class="web-title">
-            Welcome to my website
+            <span><a href="#" onclick="onHome()">Home</a></span>
+            <span><a href="#" onclick="onClick()">My Desk</a></span>
+            <span><a href="#" onclick="onContact()">Contact</a></span>
         </div>
     </div>
     <div class="content-container">
-        <span class="greeting-text">👋 hai, my name is</span>
+        <div class="greeting-text">👋 hai, my name is</div>
         <div class="greeting-title">
             Zulfikar Alwi<br>
             I build things for anything.
         </div>
         <div class="greeting-description">
-            I am a student from the faculty of computer science engineering, I am 22 years old,<br> I have an interest in the world of coding, <br>especially in coding an application for mobile. <br>there are some of my works on <a href="">my desk</a> 
+            I am a student from the faculty of computer science engineering, I am 22 years old,<br> I have an interest in the world of coding, <br>especially in coding an application for mobile. <br>there are some of my works<text class="mydesk"> on my desk</text> 
         </div>
         <div class="mydesk-button-container">
-            <a href=""><button class="mydesk-button"> See My Desk</button></a>
+            <a href="#"><button class="mydesk-button" onclick="onTap()">See My Desk</button></a>
+        </div>
+        <div class="troll" style="display: none;">
+            this is the Desk<br>just kidding you can see on this link >>> <a href="#" onclick="onClick()">Click Here</a>
         </div>
     </div>
 </body>
+    <script src="https://kit.fontawesome.com/5b7e08bb94.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        function onTap(){
+            const target = document.getElementsByClassName("troll");
+            if (target[0].attributes[1].value == 'display: none;') {
+                target[0].attributes[1].value = 'display: block;'
+            }else{
+                target[0].attributes[1].value = 'display: none;'
+            }
+            
+        }
+        function onClick(){
+            swal({
+                title: "🚧 Desk under construction 🚧",
+                text: "sabar sob, lagi dibikin dulu desk nya biar cakep",
+                icon: "warning",
+            });
+        }
+        function onContact(){
+            swal({
+                title: "Contact under construction",
+                text: "sabar sob, lagi ngumpulin kontak dulu",
+                icon: "warning",
+            });
+        }
+        function onHome(){
+            swal({
+                title: "Ini kan di home",
+                text: "lah sob, ini kan udah di home. begimane si 😆",
+                icon: "info",
+            });
+        }
+    </script>
 </html>
