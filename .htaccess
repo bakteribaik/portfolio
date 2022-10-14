@@ -1,5 +1,5 @@
 RewriteEngine  on
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !\.php$ [NC]
+RewriteCond %{REQUEST_URI} !\.html$ [NC]
 RewriteCond %{REQUEST_URI} [^/]$
-RewriteRule ^(.*)$ $1.php [L]
+RewriteRule ^(.*)$ $1.html [L]
