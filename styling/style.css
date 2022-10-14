@@ -1,0 +1,119 @@
+@font-face { font-family: Poppins; src: url('../fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins-Bold; src: url('../fonts/Poppins-Black.ttf'); } 
+
+*{
+    font-family: 'Poppins';
+}
+
+body{
+    margin: 0;
+    background-color: #1B2631;
+    background-image: url("../images/bg_element.png");
+}
+.icon-container{
+    position: fixed;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.479);
+    height: 100%;
+    width: 20px;
+    align-content: space-between;
+}
+.icon{
+    margin-top: 450px;
+}
+.icon a{
+    color: rgba(255, 255, 255, 0.356);
+}
+i{  
+    margin-bottom: 25px;
+}
+i:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.bar{
+    margin-left: 6px;
+    width: 3px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+/* end of sidebar */
+
+/* navbar css */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: white;
+    font-size: 25pt;
+    padding-left: 20px;
+    height: 60px;
+}
+.web-icon i {
+    margin-top: 20px;
+}
+.web-title{
+    margin-right: 30px;
+    font-size: 14pt;
+    color: rgba(127, 255, 212, 0.986);
+}
+/* end of navbar */
+
+/* ccontent container css */
+.content-container{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.greeting-text{
+    font-family: 'Consolas';
+    color: aquamarine;
+}
+.greeting-title{
+    font-family: 'Poppins-Bold';
+    font-weight: bold;
+    font-size: 50pt;
+    color: rgba(255, 255, 255, 0.733);
+}
+.greeting-description{
+    color: rgba(255, 255, 255, 0.473);
+}
+.greeting-description a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.portal{
+    height: 20px;
+}
+.dog-container{
+    margin-top: 400px;
+}
+.portal{
+    margin-left: -10px;
+}
+.dog{
+    margin-left: -14px;
+}
+.portal-right{
+    margin-left: -18px;
+}
+.mydesk-button-container{
+    margin-top: 20px;
+}
+.mydesk-button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    border: 1px solid aquamarine;
+    color: aquamarine;
+    background-color: transparent;
+}
+.mydesk-button:hover{
+    background-color: aquamarine;
+    color: #1B2631;
+}
+/* end of content */
+
+/* footer css */
+
+/* end of footer */
