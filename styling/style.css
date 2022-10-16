@@ -167,4 +167,11 @@ i:hover{
     .greeting-description{
         font-size: 10pt;
     }
+    .content-container{
+        margin-left: 55px;
+        padding-right: 50px;
+    }
+    .troll{
+        font-size: 10pt;
+    }
 }

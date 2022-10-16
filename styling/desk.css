@@ -8,7 +8,7 @@
 body{
     margin: 0;
     background-color: #1B2631;
-    background-image: url("../images/bg_element.png");
+    /* background-image: url("../images/bg_element.png"); */
 }
 
 
@@ -40,7 +40,7 @@ body{
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
     margin-top: 100px;
     padding-bottom: 30px;
@@ -50,8 +50,8 @@ body{
 /* card css */
 .card{
     margin: 10px;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    min-height: 300px;
     border-radius: 20px;
     padding: 20px 30px 20px 30px;
     background-color: #25303b;
