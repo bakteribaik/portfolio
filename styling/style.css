@@ -50,7 +50,6 @@ i:hover{
     font-size: 25pt;
     padding-left: 20px;
     height: 60px;
-    background-color: #1b2631ce;
 }
 .web-icon i {
     margin-top: 20px;
@@ -150,3 +149,22 @@ i:hover{
 /* footer css */
 
 /* end of footer */
+
+@media screen and (max-width: 500px){
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+    }
+    .navbar{
+        display: none;
+    }
+    .greeting-title{
+        font-size: 30pt;
+    }
+    .greeting-description{
+        font-size: 10pt;
+    }
+}
