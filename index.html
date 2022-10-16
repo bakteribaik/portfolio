@@ -25,7 +25,7 @@
         </div>
         <div class="web-title">
             <span><a href="#" onclick="onHome()">Home</a></span>
-            <span><a href="#" onclick="onClick()">My Desk</a></span>
+            <span><a href="pages/mydesk">My Desk</a></span>
             <span><a href="#" onclick="onContact()">Contact</a></span>
         </div>
     </div>
@@ -42,7 +42,7 @@
             <a href="#"><button class="mydesk-button" onclick="onTap()">See My Desk</button></a>
         </div>
         <div class="troll" style="display: none;">
-            this is the Desk<br>just kidding you can see on this link >>> <a href="#" onclick="onClick()">Click Here</a>
+            this is the Desk<br>just kidding you can see on this link >>> <a href="pages/mydesk">Click Here</a>
         </div>
     </div>
 </body>
@@ -56,7 +56,6 @@
             }else{
                 target[0].attributes[1].value = 'display: none;'
             }
-            
         }
         function onClick(){
             swal({

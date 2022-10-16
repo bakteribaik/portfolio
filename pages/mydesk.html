@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Desk Page | Zul's Porto</title>
+
+    <link rel="stylesheet" href="../styling/desk.css">
+    <script src="https://kit.fontawesome.com/5b7e08bb94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="web-icon"><a href="../index"><i class="fa fa-angles-left"></i></a></div>
+        <div id="web-title"></div>
+    </div>
+    <div id="projlist-container"></div>
+</body>
+<script>
+    var projlist = [
+        // {
+        //     "platform"  : "",
+        //     "title"     : "",
+        //     "link"      : "",
+        //     "image_url" : "",
+        //     "progress"  : 0,
+        //     "made_with" : "",
+        //     "item_desc" : ""
+        // },
+        {
+            "color"     : "lightgreen",
+            "platform"  : "Android",
+            "title"     : "WAQTU: Digital Quran Indonesia",
+            "link"      : "https://play.google.com/store/apps/details?id=com.waqtuindonesia",
+            "progress"  : 100,
+            "made_with" : "Flutter",
+            "item_desc" : "Aplikasi ini saya buat untuk memenuhi kriteria kelulusan dari kampus universitas pamulang wadawdawdawdawdawd awd awdwad awdad adwadawd awdawd awddwad "
+        },
+        {
+            "color"     : "lightsalmon",
+            "platform"  : "Website",
+            "title"     : "My Portfolio Website",
+            "link"      : "https://zulfikaralwi.my.id",
+            "progress"  : 100,
+            "made_with" : "HTML, Css, JavaScript",
+            "item_desc" : "Web ini dibuat untuk mengumpulkan dan menampilkan semua hasil belajar dan hasil kerja saya dalam dunia kodingan"
+        },
+        {
+            "color"     : "lightgreen",
+            "platform"  : "Android",
+            "title"     : "Winkchat",
+            "link"      : "-",
+            "progress"  : 0,
+            "made_with" : "Flutter",
+            "item_desc" : "Aplikasi Chatting Sosmed (posting gambar, text, dll)"
+        },
+        {
+            "color"     : "lightgreen",
+            "platform"  : "Android",
+            "title"     : "Simple Barcode",
+            "link"      : "-",
+            "progress"  : 0,
+            "made_with" : "Flutter",
+            "item_desc" : "Aplikasi untuk scan dan generate QRcode"
+        },
+        {
+            "color"     : "lightsalmon",
+            "platform"  : "Website",
+            "title"     : "Elearning SMK Paramarta",
+            "link"      : "Ongoing..",
+            "progress"  : 40,
+            "made_with" : "HTML, CSS, JavaScript, PHP, MySQL",
+            "item_desc" : "aplikasi ini saya buat untuk memenuhi kriteria kelulusan dari universitas pamulang sebagai Tugas Akhir"
+        },
+    ]
+
+    var container = document.getElementById("projlist-container")
+    var webtitle = document.getElementById("web-title")
+
+    var html = '';
+    
+    projlist.map(_row => {
+        if(_row.progress == 100){
+            html += `
+                <div class="card">
+                    <div class="header-container">
+                        <div class="circle" style="background-color: ${_row.color};"></div>
+                        <div class="platform">
+                            ${_row.platform}
+                        </div>
+                    </div>
+                    <div class="title">
+                        ${_row.title}
+                    </div>
+                    <div class="container-right">
+                        <div class="released">
+                            Released                       
+                        </div>
+                        <div class="link"><a href="${_row.link}">${_row.link}</a></div>
+                        <div class="made">Made With ${_row.made_with}</div>
+                        <div class="desc">${_row.item_desc}</div>
+                    </div>
+                </div>
+            `
+        }else if(_row.progress == 0){
+            html += `
+                <div class="card">
+                    <div class="header-container">
+                        <div class="circle" style="background-color: ${_row.color};"></div>
+                        <div class="platform">
+                            ${_row.platform}
+                        </div>
+                    </div>
+                    <div class="title">
+                        ${_row.title}
+                    </div>
+                    <div class="container-right">
+                        <div class="uncontinued">
+                            Uncontinued                      
+                        </div>
+                        <div class="link"><a href="${_row.link}">${_row.link}</a></div>
+                        <div class="made">Made With ${_row.made_with}</div>
+                        <div class="desc">${_row.item_desc}</div>
+                    </div>
+                </div>
+            `
+        }
+        else{
+            html += `
+                <div class="card">
+                    <div class="header-container">
+                        <div class="circle" style="background-color: ${_row.color};"></div>
+                        <div class="platform">
+                            ${_row.platform}
+                        </div>
+                    </div>
+                    <div class="title">
+                        ${_row.title}
+                    </div>
+                    <div class="desc-container">
+                        <div class="container-right">
+                            <div class="progbar-bg">
+                                <div class="progbar" style="width: ${_row.progress}%;"></div>                            
+                            </div>
+                            <div class="link"><a href="${_row.link}">${_row.link}</a></div>
+                            <div class="made">${_row.made_with}</div>
+                            <div class="desc">${_row.item_desc}</div>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+    })
+    container.innerHTML = html
+    webtitle.innerHTML = `${projlist.length} Project Status Available`
+</script>
+</html>

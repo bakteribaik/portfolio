@@ -1,0 +1,155 @@
+@font-face { font-family: Poppins; src: url('../fonts/Poppins-Regular.ttf'); } 
+@font-face { font-family: Poppins-Bold; src: url('../fonts/Poppins-Black.ttf'); } 
+
+*{
+    font-family: 'Poppins';
+}
+
+body{
+    margin: 0;
+    background-color: #1B2631;
+    /* background-image: url("../images/bg_element.png"); */
+}
+
+
+/* navbar css */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0px;
+}
+.web-icon{
+    font-size: 20pt;
+}
+.web-icon a{
+    color: white;
+}
+.web-icon a:hover{
+    color: aquamarine;
+}
+#web-title{
+    margin-left: 30px;
+}
+/* end of navbar */
+
+
+#projlist-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+
+/* card css */
+.card{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 20px 30px 20px 30px;
+    background-color: #25303b;
+    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.39); */
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.39);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.platform{
+    color: white;
+}
+.title{
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 15pt;
+}
+.image{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-right{
+    margin-top: 20px;
+    font-size: 10pt;
+    color: white;
+}
+.progbar-bg{
+    margin-top: 6px;
+    background-color: grey;
+    height: 8px;
+    border-radius: 10px;
+}
+.progbar{
+    background-color: orange;
+    height: 8px;
+    border-radius: 10px;
+    width: 45%;
+}
+.link{
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(46, 156, 120);
+}
+.link a:hover{
+    color: aquamarine
+}
+.made{
+   
+}
+.desc{
+    margin-top: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.desc:hover{
+    display: block;
+    text-overflow: unset;
+}
+.released{
+    background-color: rgb(26, 177, 106);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.uncontinued{
+    background-color: rgb(180, 138, 23);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+/* end of card */
